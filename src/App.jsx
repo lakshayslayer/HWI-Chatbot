@@ -13,7 +13,7 @@ import {
 function App() {
   const key = import.meta.env.VITE_API_KEY;
   const [messages, setMessages] = useState([
-    { message: "Hello, I'm Sai! Ask me anything!", sentTime: "just now", sender: "ChatGPT" }
+    { message: "Hello, I'm Swasth! Ask me anything!", sentTime: "just now", sender: "ChatGPT" }
   ]);
   const [isTyping, setIsTyping] = useState(false);
   const [textFileContent, setTextFileContent] = useState("");
@@ -76,7 +76,7 @@ function App() {
           <ChatContainer>
             <MessageList
               scrollBehavior="smooth"
-              typingIndicator={isTyping ? <TypingIndicator content="Sai is typing" /> : null}
+              typingIndicator={isTyping ? <TypingIndicator content="Swasth is typing" /> : null}
             >
               {messages.map((msg, i) => (
                 <div key={i} className={`message-wrapper ${msg.sender === "ChatGPT" ? "bot" : "user"}`}>
