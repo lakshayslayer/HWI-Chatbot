@@ -82,7 +82,7 @@ function App() {
                 <div key={i} className={`message-wrapper ${msg.sender === "ChatGPT" ? "bot" : "user"}`}>
                   {msg.sender === "ChatGPT" && (
                     <img
-                      src="/public/Bot-health.png" // Path to bot image in the public folder
+                      src="https://raw.githubusercontent.com/lakshayslayer/HWI-Chatbot/main/public/Bot-health.png"
                       alt="Bot"
                       className="bot-image"
                     />
@@ -100,7 +100,7 @@ function App() {
                   </div>
                   {msg.sender === "user" && (
                     <img
-                      src="/public/UserImage.png" // Path to user image in the public folder
+                      src="https://raw.githubusercontent.com/lakshayslayer/HWI-Chatbot/main/public/UserImage.png"
                       alt="User"
                       className="user-image"
                     />
